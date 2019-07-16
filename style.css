@@ -1,0 +1,269 @@
+body{
+  font-family: serif, sans-serif;
+}
+
+header{
+  position: relative;
+  z-index: 1000000;
+}
+
+p{
+  font-size: 20px;
+}
+
+.navbar{
+  transition: 0.5s;
+  background: transparent !important;
+}
+.navbar.scrolled{
+  background: #000 !important;
+  transition: 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  color: rgba(255, 255,  255, 0.8);
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus
+{
+    color: rgba(255,255,255,1);
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited {
+    color: rgba(255,255,255,1);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.banner{
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(download.png);
+  background-size: cover;
+  margin-bottom: 0;
+}
+
+.banner:before,
+.sec2:before,
+.contact:before, {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(#000, transparent);
+}
+
+.banner:after,
+.sec2:after,
+.contact:after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(360deg #000, transparent);
+}
+
+.height100p{
+  height: 100vh;
+}
+
+.h100{
+  height: 100%;
+}
+
+.contentBox{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+}
+
+.contentBox h1{
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 45px;
+}
+
+.contentBox p{
+  color: #fff;
+  font-size: 26px;
+}
+
+.sec1{
+  padding: 100px 0;
+  background: #000;
+  margin-top: 0;
+}
+.headerText{
+  color: #fff;
+}
+.headerText h2{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.placeBox{
+  position: relative;
+  max-width: 300px;
+  height: 400px;
+  background: #000;
+  margin-top: 30px;
+  margin: 0 auto;
+}
+
+.placeBox .imagebox{
+  width: 100%;
+  height: 100%;
+}
+
+.placeBox .imagebox img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.placeBox .content{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: baseline;
+  align-items: flex-end;
+}
+
+.placeBox .content h3{
+  position: relative;
+  margin: 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.95);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+
+.placeBox .content h3 span{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.sec2{
+  position: relative;
+  background: url(images.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+.sec2 h3{
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 45px;
+}
+
+.btnD1{
+  border: 2px solid #fff;
+  color: #fff;
+  background: #fff;
+  border-radius: 50%;
+  padding: 15px 50px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.blog{
+  position: relative;
+  padding: 100px 0;
+  background: #000;
+}
+
+.blogpost{
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  background: #fff;
+}
+
+.blogpost.imagebox{
+  height: 400px;
+  }
+
+  .blogpost.imagebox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.blogpost .content{
+  padding: 15px;
+}
+
+.blogpost .content h1{
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.btnd2{
+  background: #262626;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.contact{
+  position: relative;
+  padding: 100px 0;
+  background-image: url(download.png);
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.contact .form-control{
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, .2);
+  height: 50px;
+  border-radius: 0;
+  background: rgba(0,0,0,.6);
+  color: #fff;
+  font-size: 20px;
+}
+
+.contact .form-control:focus,
+.contact .form-control:hover{
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, .1);
+  box-shadow: none;
+}
+
+.contact .textarea{
+  min-height: 100px;
+}
+
+.contact .label{
+  color: #fff;
+  font-size: 25px;
+}
+
+.contact form{
+  position: relative;
+  z-index: 1000;
+}
